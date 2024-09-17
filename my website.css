@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #008CBA;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 20px auto;
+}
+
+#webmap {
+    width: 85%;
+    height: 85%;
+    max-width: 900px;
+    max-height: 900px;
+    border: 2px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 7px;
+    background-color: #ef4565;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
