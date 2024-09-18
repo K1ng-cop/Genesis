@@ -7,7 +7,7 @@ const portsInfo = {
 
 // Fuction to show Port Infomation
 function showPortInfo(portName) {
-    const infoPanel = documnet.getElementById('info-panel');
+    const infoPanel = document.getElementById('info-panel');
     const portDetails = document.getElementById('port-details');
 
 
@@ -22,7 +22,6 @@ document.addEventListener('click', function (event) {
 
     const portName = event.target.getAttribute('data-port-name');
 
-
     if (portName && portsData[portName]) {
         showPortInfo(portName);
     } else {
@@ -30,6 +29,9 @@ document.addEventListener('click', function (event) {
     }
 });
 
+document.addEventListener('click', function (event) {
+    console.log(event.target); // Log clicked element to the console
+});
 
 console.log("Web Map Load");
 
