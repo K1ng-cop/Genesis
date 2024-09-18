@@ -7,7 +7,7 @@ const portsInfo = {
 
 // Fuction to show Port Infomation
 function showPortInfo(portName) {
-    const infoPanel = document.getElementById('info-panel');
+    const infoPanel = documeet.getElementById('info-panel');
     const portDetails = document.getElementById('port-details');
 
 
@@ -15,7 +15,7 @@ function showPortInfo(portName) {
     portDetails.inneHTML = portsData[portName]  || 'No information available for this port.',
 
     //Show the info panel
-    infoPanel.style.display = 'block';
+    infoPanel.style.display = 'inline-block';
 }
 
 document.addEventListener('click', function (event) {
